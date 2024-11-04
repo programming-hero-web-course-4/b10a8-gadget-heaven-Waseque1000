@@ -13,7 +13,7 @@ const Allproducts = () => {
         {/* TODO: catagory  */}
         <div className="w-1/4">
           <div className="flex bg-white text-black flex-col ml-10 mt-10">
-            <Link className="mt-2 text-1xl p-3 active:bg-blue-400 rounded-2xl ">
+            <Link className="mt-2  text-1xl p-3 active:bg-blue-400 rounded-2xl ">
               All Product
             </Link>
             <Link className="mt-2 text-1xl p-3 active:bg-blue-400 rounded-2xl">
