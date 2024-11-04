@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
 
+import { FaCartShopping, FaHeart } from "react-icons/fa6";
+
 const Header = () => {
   return (
     <div>
       <div className="navbar bg-purple-400">
         <div className="navbar-start">
-          <h2 className="text-white text-2xl">Gadget Heaven</h2>
+          <Link className="text-white text-2xl"> Gadget Heaven</Link>
         </div>
         <div className="navbar-center">
-          <Link className=" mr-5 text-white ">Home</Link>
+          <Link className=" mr-5 text-white  " to="/">
+            Home
+          </Link>
           <Link className="mr-5 text-white" to="/statistic">
             Statistic
           </Link>
@@ -16,42 +20,19 @@ const Header = () => {
             Dashboard
           </Link>
         </div>
-        <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-          <button className="btn btn-ghost btn-circle">
-            <div className="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                />
-              </svg>
-              <span className="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
+        <div className="px-5 navbar-end ml-30">
+          <div className="indicator">
+            <span className="indicator-item badge  ">9+</span>
+            <button className=" px-2 py-1 rounded-2xl">
+              <FaCartShopping className="text-2xl"></FaCartShopping>
+            </button>
+          </div>
+          <div className="indicator">
+            <span className="indicator-item badge  ">9+</span>
+            <button className=" px-2 py-1 rounded-2xl">
+              <FaHeart className="text-2xl"></FaHeart>
+            </button>
+          </div>
         </div>
       </div>
     </div>
