@@ -6,6 +6,7 @@ import MainLayout from "./Layout/MainLaoyout/MainLayout.jsx";
 import Home from "./Components/Home/Home/Home.jsx";
 import Details from "./Components/Details/Details.jsx";
 import Statistic from "./Components/Statistic/Statistic.jsx";
+import Dashboard from "./Components/Dashboard/Dashboard/Dashboard.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
         path: "/statistic",
         loader: () => fetch("data.json"),
         element: <Statistic />,
+      },
+      {
+        path: "/dashboard",
+        loader: () => fetch("data.json"),
+        element: <Dashboard />,
       },
     ],
   },
