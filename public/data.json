@@ -1,0 +1,247 @@
+[
+  {
+    "product_id": "1",
+    "product_title": "SuperBook Pro 15",
+    "product_image": "https://ibb.co.com/7RDn418",
+    "category": "Laptop",
+    "price": 1299.99,
+    "description": "High-performance laptop with a sleek design, perfect for professionals.",
+    "Specification": [
+      "Intel i7 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "15.6-inch 4K Display",
+      "NVIDIA GeForce GTX 1650"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "2",
+    "product_title": "iPad Air 5th Gen",
+    "product_image": "https://ibb.co.com/cc496Px",
+    "category": "Tablet",
+    "price": 599.99,
+    "description": "Lightweight tablet with powerful performance and stunning Retina display.",
+    "Specification": [
+      "A14 Bionic chip",
+      "10.9-inch Liquid Retina display",
+      "64GB Storage",
+      "Wi-Fi and Cellular options",
+      "Apple Pencil support"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "3",
+    "product_title": "SmartPhone X Pro",
+    "product_image": "https://ibb.co.com/9cHCTWc",
+    "category": "Phone",
+    "price": 999.99,
+    "description": "Flagship smartphone with cutting-edge technology and stunning design.",
+    "Specification": [
+      "Snapdragon 888 processor",
+      "12GB RAM",
+      "256GB Storage",
+      "6.7-inch AMOLED Display",
+      "Triple Camera System"
+    ],
+    "availability": false,
+    "rating": 4.7
+  },
+  {
+    "product_id": "4",
+    "product_title": "UltraSlim Laptop 14",
+    "product_image": "https://ibb.co.com/c2xfVQ0",
+    "category": "Laptop",
+    "price": 899.99,
+    "description": "Compact and lightweight laptop ideal for travel.",
+    "Specification": [
+      "Intel i5 Processor",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch Full HD Display"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "5",
+    "product_title": "Galaxy Tab S7",
+    "product_image": "https://ibb.co.com/42t05PQ",
+    "category": "Tablet",
+    "price": 649.99,
+    "description": "Versatile tablet with powerful features and stunning display.",
+    "Specification": [
+      "Snapdragon 865+",
+      "8GB RAM",
+      "128GB Storage",
+      "11-inch LTPS LCD",
+      "S Pen included"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "6",
+    "product_title": "iPhone 14 Pro",
+    "product_image": "https://ibb.co.com/Sn0nVsC",
+    "category": "Phone",
+    "price": 1099.99,
+    "description": "Next-generation smartphone with exceptional camera and performance.",
+    "Specification": [
+      "A16 Bionic chip",
+      "6GB RAM",
+      "256GB Storage",
+      "6.1-inch Super Retina XDR display",
+      "ProMotion technology"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "7",
+    "product_title": "Lenovo Yoga Slim 7",
+    "product_image": "https://ibb.co.com/v4K0Zxh",
+    "category": "Laptop",
+    "price": 1199.99,
+    "description": "Stylish 2-in-1 laptop with great battery life and performance.",
+    "Specification": [
+      "AMD Ryzen 7",
+      "16GB RAM",
+      "1TB SSD",
+      "14-inch FHD Display"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "8",
+    "product_title": "Microsoft Surface Pro 8",
+    "product_image": "https://ibb.co.com/FzrkNSX",
+    "category": "Tablet",
+    "price": 899.99,
+    "description": "Powerful tablet that replaces your laptop.",
+    "Specification": [
+      "Intel i5 Processor",
+      "8GB RAM",
+      "128GB Storage",
+      "13-inch PixelSense Display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "9",
+    "product_title": "OnePlus 9",
+    "product_image": "https://ibb.co.com/d5GGgmd",
+    "category": "Phone",
+    "price": 729.99,
+    "description": "High-performance smartphone with stunning camera capabilities.",
+    "Specification": [
+      "Snapdragon 888",
+      "8GB RAM",
+      "128GB Storage",
+      "6.55-inch Fluid AMOLED Display"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "10",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://ibb.co.com/xfF8BMN",
+    "category": "Laptop",
+    "price": 1399.99,
+    "description": "Premium convertible laptop with elegant design.",
+    "Specification": [
+      "Intel i7 Processor",
+      "16GB RAM",
+      "1TB SSD",
+      "13.3-inch 4K OLED Display"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "11",
+    "product_title": "Apple AirPods Pro",
+    "product_image": "https://ibb.co.com/JdP3rCG",
+    "category": "Earbuds",
+    "price": 249.99,
+    "description": "Active noise cancellation, customizable fit, and superior sound quality.",
+    "Specification": [
+      "Apple H1 chip",
+      "Silicone tips for a customizable fit",
+      "Up to 4.5 hours of listening time",
+      "Sweat and water resistance"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "12",
+    "product_title": "Samsung Galaxy Buds 2",
+    "product_image": "https://ibb.co.com/5cmx8Qk",
+    "category": "Earbuds",
+    "price": 149.99,
+    "description": "Lightweight earbuds with great sound quality and active noise cancellation.",
+    "Specification": [
+      "Dynamic two-way speakers",
+      "Up to 5 hours of playtime",
+      "IPX2 water resistance",
+      "Touch controls"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "13",
+    "product_title": "Apple Watch Series 7",
+    "product_image": "https://ibb.co.com/wcHt4Fs",
+    "category": "Smartwatch",
+    "price": 399.99,
+    "description": "Smartwatch with fitness tracking, heart monitoring, and customizable watch faces.",
+    "Specification": [
+      "Always-On Retina display",
+      "Fitness and health tracking",
+      "Water resistant to 50 meters",
+      "Multiple watch bands available"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "14",
+    "product_title": "Samsung Galaxy Watch 4",
+    "product_image": "https://ibb.co.com/HT6D5V0",
+    "category": "Smartwatch",
+    "price": 249.99,
+    "description": "Stylish smartwatch with health monitoring and fitness tracking features.",
+    "Specification": [
+      "Super AMOLED display",
+      "Body composition analysis",
+      "Fitness tracking capabilities",
+      "IP68 water resistance"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "15",
+    "product_title": "Fitbit Versa 3",
+    "product_image": "https://ibb.co.com/f9XFyPX",
+    "category": "Smartwatch",
+    "price": 229.99,
+    "description": "Smart fitness watch with built-in GPS and heart rate tracking.",
+    "Specification": [
+      "On-screen workouts",
+      "Built-in GPS",
+      "24/7 heart rate tracking",
+      "Voice assistant support"
+    ],
+    "availability": true,
+    "rating": 4.4
+  }
+]
