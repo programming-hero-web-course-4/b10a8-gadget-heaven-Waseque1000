@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import AllItems from "../Display/AllItems/AllItems";
 
-const Allproducts = ({ cart, addToCart }) => {
+const Allproducts = () => {
   return (
     <div>
       <div>
@@ -36,7 +36,7 @@ const Allproducts = ({ cart, addToCart }) => {
 
         {/* TODO: */}
         <div className="w-4/5">
-          <AllItems cart={cart} addToCart={addToCart}></AllItems>
+          <AllItems></AllItems>
         </div>
       </div>
     </div>

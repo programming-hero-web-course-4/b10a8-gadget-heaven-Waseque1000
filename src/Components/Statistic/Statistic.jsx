@@ -12,7 +12,7 @@ import {
 
 const Statistic = () => {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <div>
       <div className="text-center py-20 bg-white">

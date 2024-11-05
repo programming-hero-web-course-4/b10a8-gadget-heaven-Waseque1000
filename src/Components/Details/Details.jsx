@@ -1,50 +1,152 @@
-import React, { useState } from "react";
+// import React, { useState, useEffect } from "react";
+// import { FaCartShopping } from "react-icons/fa6";
+// import { useLoaderData, useParams } from "react-router-dom";
+
+// const Details = () => {
+//   const loaderData = useLoaderData();
+//   const { id } = useParams();
+//   const [product, setProduct] = useState(null);
+
+//   useEffect(() => {
+//     const savedProduct = localStorage.getItem(`product_${id}`);
+//     if (savedProduct) {
+//       // Parse and set product from localStorage
+//       setProduct(JSON.parse(savedProduct));
+//     } else {
+//       // Find product in loaderData if not in localStorage
+//       const productFromData = loaderData.find((item) => item.product_id === id);
+//       setProduct(productFromData);
+//       if (productFromData) {
+//         // Save to localStorage for future use
+//         localStorage.setItem(`product_${id}`, JSON.stringify(productFromData));
+//       }
+//     }
+//   }, [id, loaderData]);
+
+//   return (
+//     <div>
+//       {product ? (
+//         <div className=" pt-10 pb-10  mx-auto">
+//           <div className="hero bg-base-200 min-h-screen">
+//             <div className="hero-content flex-col lg:flex-row">
+//               <img
+//                 src={product.product_image}
+//                 className="w-80 h-[100%] rounded-lg shadow-2xl"
+//               />
+//               <div className="pl-10">
+//                 <h1 className="text-5xl font-bold">{product.product_title}</h1>
+//                 <p className="mt-2">$ {product.price}</p>
+//                 <p>
+//                   {product.availability == true ? (
+//                     <button className="bg-green-900 px-2 rounded-2xl mb-1 text-white">
+//                       In Stock
+//                     </button>
+//                   ) : (
+//                     <button>Out of Stock</button>
+//                   )}
+//                 </p>
+//                 <p className="py-6">{product.description}</p>
+//                 <p>Specification</p>
+//                 <ul>
+//                   {product.Specification.map((spec) => (
+//                     <li className="my-2" key={spec}>
+//                       {spec}
+//                     </li>
+//                   ))}
+//                 </ul>
+//                 <button className=" flex bg-purple-600 text-white px-4 py-2 rounded-2xl">
+//                   Add To Cart{" "}
+//                   <FaCartShopping className="text-2xl ml-2"> </FaCartShopping>
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       ) : (
+//         <p>Product not found.</p>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Details;
+
+import React, { useState, useEffect } from "react";
 import { FaCartShopping } from "react-icons/fa6";
+import { useLoaderData, useParams } from "react-router-dom";
 
-const Details = ({ item, cart, addToCart }) => {
-  const {
-    product_title,
-    product_image,
-    price,
-    category,
-    description,
-    Specification,
-  } = item;
+const Details = () => {
+  const loaderData = useLoaderData();
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    const savedProduct = localStorage.getItem(`product_${id}`);
+    if (savedProduct) {
+      setProduct(JSON.parse(savedProduct));
+    } else {
+      const productFromData = loaderData.find((item) => item.product_id === id);
+      setProduct(productFromData);
+      if (productFromData) {
+        localStorage.setItem(`product_${id}`, JSON.stringify(productFromData));
+      }
+    }
+  }, [id, loaderData]);
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  // Function to add product to cart
+  const addToCart = () => {
+    const currentCart = JSON.parse(localStorage.getItem("cart")) || [];
+    const updatedCart = [...currentCart, product];
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+    alert(`${product.product_title} has been added to your cart!`);
+  };
 
   return (
-    <div className="flex w-[100%] h-[80%]   text-center">
-      <div className=" pt-20   ">
-        <img
-          src={product_image}
-          alt={product_title}
-          className="mx-auto   mb-4"
-        />
-      </div>
-
-      <div className="  text-left pt-8 pb-9">
-        <h2 className="text-2xl font-bold mb-4">{product_title}</h2>
-
-        <p className="text-lg text-gray-700">Category: {category}</p>
-        <p className="text-lg text-gray-700 mb-4">Price: ${price}</p>
-
-        <h3 className="text-lg font-semibold mb-2">Specifications:</h3>
-        <ul className="list-disc list-inside text-gray-600">
-          {Specification.map((spec, index) => (
-            <li key={index}>{spec}</li>
-          ))}
-        </ul>
-        <button
-          onClick={() => addToCart(item)} // Add to cart on click
-          className="bg-purple-500 flex text-white px-4 py-1 mt-3 rounded-2xl"
-        >
-          Add To Cart <FaCartShopping className="ml-2 text-2xl" />
-        </button>
-      </div>
+    <div>
+      {product ? (
+        <div className=" pt-10 pb-10  mx-auto">
+          <div className="hero bg-base-200 min-h-screen">
+            <div className="hero-content flex-col lg:flex-row">
+              <img
+                src={product.product_image}
+                className="w-80 h-[100%] rounded-lg shadow-2xl"
+                alt={product.product_title}
+              />
+              <div className="pl-10">
+                <h1 className="text-5xl font-bold">{product.product_title}</h1>
+                <p className="mt-2">$ {product.price}</p>
+                <p>
+                  {product.availability ? (
+                    <button className="bg-green-900 px-2 rounded-2xl mb-1 text-white">
+                      In Stock
+                    </button>
+                  ) : (
+                    <button>Out of Stock</button>
+                  )}
+                </p>
+                <p className="py-6">{product.description}</p>
+                <p>Specification</p>
+                <ul>
+                  {product.Specification.map((spec) => (
+                    <li className="my-2" key={spec}>
+                      {spec}
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  onClick={addToCart}
+                  className="flex bg-purple-600 text-white px-4 py-2 rounded-2xl"
+                >
+                  Add To Cart
+                  <FaCartShopping className="text-2xl ml-2" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <p>Product not found.</p>
+      )}
     </div>
   );
 };

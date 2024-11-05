@@ -1,5 +1,11 @@
+import Cart from "../../Cart/Cart";
+
 const Dashboard = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Cart></Cart>
+    </div>
+  );
 };
 
 export default Dashboard;
