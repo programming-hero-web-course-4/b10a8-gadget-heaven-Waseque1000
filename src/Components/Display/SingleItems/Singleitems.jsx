@@ -53,7 +53,7 @@ const Singleitems = ({ item, cart, addToCart }) => {
           <div className="card-actions">
             <Link to={`/details/${product_id}`}>
               <button className="px-4 py-1 rounded-3xl text-purple-800 outline outline-1 outline-purple-300">
-                View De tails
+                View Details
               </button>
             </Link>
           </div>

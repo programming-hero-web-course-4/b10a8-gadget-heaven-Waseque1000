@@ -14,10 +14,10 @@ const Allproducts = () => {
         <div className="w-1/5">
           <div className="flex bg-white text-black flex-col ml-10 mt-10">
             <Link className="mt-2  text-1xl p-3 active:bg-blue-400 rounded-2xl ">
-              All Product
+              <button> All Product</button>
             </Link>
             <Link className="mt-2 text-1xl p-3 active:bg-blue-400 rounded-2xl">
-              Laptops
+              <button> Laptops</button>
             </Link>
             <Link className="mt-2 text-1xl p-3 active:bg-blue-400 rounded-2xl">
               Mobile
