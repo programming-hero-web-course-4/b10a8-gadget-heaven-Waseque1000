@@ -7,6 +7,7 @@ import Home from "./Components/Home/Home/Home.jsx";
 import Details from "./Components/Details/Details.jsx";
 import Statistic from "./Components/Statistic/Statistic.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard/Dashboard.jsx";
+import Blog from "./Components/Blog/Blog.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +32,12 @@ const router = createBrowserRouter([
         path: "/dashboard",
         loader: () => fetch("/data.json"),
         element: <Dashboard />,
+      },
+      {
+        path: "/blog",
+        loader: () => fetch("/blog.json"),
+
+        element: <Blog></Blog>,
       },
     ],
   },

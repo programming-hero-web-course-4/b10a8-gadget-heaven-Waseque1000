@@ -1,10 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Hero2 from "./Hero2";
+import { Helmet } from "react-helmet";
 
 const Hero = () => {
   return (
     <div>
+      <Helmet>
+        <title>Gadget Heaven</title>
+        <meta name="description" content="Nested component" />
+      </Helmet>
       <div className="bg-purple-400 pt-20 pb-52 text-center">
         <div>
           <h1 className="text-5xl font-bold text-white text-center ">

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "title": "The Birth of Computing: 1900-1950",
+    "image": "https://i.ibb.co.com/2vLL3rh/okk4.jpg",
+    "description": "Explore the origins of computing and early pioneers like Ada Lovelace, Alan Turing, and the development of the first computers.",
+    "content": "This era laid the foundation for modern computing with concepts like the Turing Machine and the first mechanical computers, including ENIAC and Colossus..."
+  },
+  {
+    "id": "2",
+    "title": "The Rise of Programming Languages: 1950-1970",
+    "image": "https://i.ibb.co.com/tPfBJws/okkk.jpg",
+    "description": "Discover the emergence of the first programming languages, including Fortran, COBOL, and Lisp, and how they shaped the future of programming.",
+    "content": "The 1950s and 60s saw the introduction of languages like Fortran, designed for scientific computing, and COBOL, tailored for business applications..."
+  },
+  {
+    "id": "3",
+    "title": "The Personal Computer Revolution: 1970-1990",
+    "image": "https://i.ibb.co.com/XDPk2T0/okkk5.jpg",
+    "description": "Learn about the development of programming languages like C, C++, and BASIC, and the explosion of personal computers in the 1980s.",
+    "content": "With the rise of personal computers, languages like C and C++ became dominant, allowing developers to create software for an expanding tech-savvy audience..."
+  },
+  {
+    "id": "4",
+    "title": "The Internet Boom and Modern Languages: 1990-2000",
+    "image": "https://i.ibb.co.com/GVXn51p/okkk6.jpg",
+    "description": "Explore how the rise of the internet introduced new languages like Java, JavaScript, and PHP, shaping the modern web as we know it.",
+    "content": "As the internet became widely accessible, Java brought platform independence, while JavaScript enabled dynamic web pages, giving rise to interactive websites..."
+  },
+  {
+    "id": "5",
+    "title": "Open Source and the Rise of Scripting: 2000-2010",
+    "image": "https://i.ibb.co.com/XsJVhsh/okkkkk8.jpg",
+    "description": "Understand the impact of open-source software, Python, Ruby, and the importance of community-driven programming in the early 2000s.",
+    "content": "The early 2000s witnessed the rise of open-source projects and languages like Python and Ruby, which emphasized readability, community, and rapid development..."
+  },
+  {
+    "id": "6",
+    "title": "Mobile Development and New Frameworks: 2010-2020",
+    "image": "https://i.ibb.co.com/j6zQGVc/programing.jpg",
+    "description": "Learn about the boom in mobile development, with languages like Swift, Kotlin, and frameworks such as React Native, transforming app development.",
+    "content": "The 2010s introduced a focus on mobile, with Apple’s Swift and Google’s Kotlin catering to iOS and Android respectively, while frameworks like React Native unified development..."
+  }
+]
