@@ -1,6 +1,6 @@
 # Gadget Hub
 
-- okokoval-minute.surge.sh
+- [Live Link](https://okokoval-minute.surge.sh/)
 
 ## 🚀 About the Project
 
