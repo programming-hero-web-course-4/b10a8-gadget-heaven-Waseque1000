@@ -16,5 +16,9 @@ Gadget Hub is an e-commerce website where users can explore and purchase a varie
 
 ## 🎯 Features
 
-- YPurchase Gadgets: Browse and buy gadgets.
+- Purchase Gadgets: Browse and buy gadgets.
 - Wishlist: Add products to a wishlist for future reference.
+- Use LocalStorage to save to the data
+- This is a responsive website(Mobile)
+- you can remove items from Dashboard
+- Hear is a Statistic Page
