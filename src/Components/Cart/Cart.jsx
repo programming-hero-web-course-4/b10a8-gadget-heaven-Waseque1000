@@ -34,10 +34,10 @@ const Cart = () => {
   };
 
   return (
-    <div className="px-20 pt-10">
-      <div className="flex justify-between">
-        <div className="text-3xl font-bold">Cart</div>
-        <div className="flex text-center gap-2 justify-center">
+    <div className="px-4 sm:px-10 pt-10">
+      <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start">
+        <div className="text-3xl font-bold mb-4 sm:mb-0">Cart</div>
+        <div className="flex text-center gap-2 justify-center sm:justify-start w-full sm:w-auto">
           <p className="text-2xl mr-3 font-bold mt-1">
             Total: $
             {cartItems
@@ -68,7 +68,7 @@ const Cart = () => {
                     <img src={item.product_image} alt={item.product_title} />
                   </div>
                 </div>
-                <div className="pl10">
+                <div className="pl-10">
                   <div className="font-bold text-lg md:text-xl">
                     {item.product_title}
                   </div>
@@ -87,32 +87,30 @@ const Cart = () => {
           </div>
         ))
       ) : (
-        <p></p>
+        <p>Your cart is empty.</p>
       )}
 
       {/* Modal for Purchase Confirmation */}
       {isModalOpen && (
         <div className="fixed text-center inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
-            <div className="text-center pl-32">
-              <img className="text-center" src={img} alt="" />
+            <div className="text-center">
+              <img className="mx-auto" src={img} alt="Payment Success" />
             </div>
-            <h2 className="text-2xl mt-2 font-bold mb-4">
-              Payment Successfully
-            </h2>
+            <h2 className="text-2xl mt-2 font-bold mb-4">Payment Successful</h2>
             <hr className="mt-3 mb-3" />
-            <p>Thanks For Purchasing</p>
+            <p>Thanks for your purchase!</p>
             <p>
-              Total{" "}
+              Total:{" "}
               {cartItems
                 .reduce((total, item) => total + item.price, 0)
-                .toFixed(2)}{" "}
+                .toFixed(2)}
             </p>
 
-            <div className="flex justify-end mr-32 gap-4 mt-6">
+            <div className="flex justify-end gap-4 mt-6">
               <button
                 onClick={handlePurchase} // Confirm and clear cart
-                className=" px-4 py-2 bg-gray-200 text-black    "
+                className="px-4 py-2 bg-gray-200 text-black"
               >
                 Close
               </button>

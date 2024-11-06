@@ -19,10 +19,7 @@ const Blog = () => {
             />
             <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
             <p className="text-gray-600 mb-4">{post.description}</p>
-            <button
-              className="text-blue-500 font-semibold hover:underline"
-              onClick={() => alert(post.content)} // You could link to a detailed page here instead
-            >
+            <button className="text-blue-500 font-semibold hover:underline">
               Read More
             </button>
           </div>

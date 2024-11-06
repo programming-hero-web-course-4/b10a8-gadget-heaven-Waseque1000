@@ -7,20 +7,20 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
 const Statistic = () => {
   const data = useLoaderData();
-  // console.log(data);
+
   return (
-    <div>
+    <div className="">
       <Helmet>
         <title>Statistic | Gadget Heaven</title>
-        <meta name="description" content="Nested component" />
+        <meta name="description" content="Statistic of products" />
       </Helmet>
-      <div className="text-center py-20 bg-purple-500 text-white">
+
+      <div className="text-center px-7 py-20 bg-purple-500 text-white">
         <h1 className="text-4xl mb-2 font-extrabold">Statistic</h1>
         <p>
           Explore the latest gadgets that will take your experience to the next
@@ -28,9 +28,13 @@ const Statistic = () => {
           the coolest accessories, we have it all!
         </p>
       </div>
-      <div className="flex justify-center items-center bg-gray-100">
+
+      <div className="flex justify-center items-center bg-gray-100 px-4 sm:px-8">
         <div className="w-full max-w-4xl p-4 bg-white shadow-md rounded-lg">
-          <h2 className="text-2xl font-bold  my-3 mb-4">Statistic</h2>
+          <h2 className="text-2xl font-bold my-3 mb-4">
+            Price Distribution by Product
+          </h2>
+
           <ResponsiveContainer width="100%" height={400}>
             <BarChart
               data={data}

@@ -6,13 +6,16 @@ const Singleitems = ({ item, cart, addToCart }) => {
 
   return (
     <div className="mb-5">
-      <div className="card w-100 h-[100%] bg-base-100 shadow-xl">
+      <div className="card w-100 h-[100%] flex flex-col bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img src={product_image} alt={product_title} />
         </figure>
-        <div className="card-body items-right">
-          <h2 className="card-title">{product_title}</h2>
-          <p>${price}</p>``
+        <div className="card-body flex-grow  items-right">
+          <div className="flex-grow">
+            <h2 className="flex-grow card-title">{product_title}</h2>
+            <p>${price}</p>
+          </div>
+
           <div className="card-actions">
             <Link to={`/details/${product_id}`}>
               <button className="px-4 py-1 rounded-3xl text-purple-800 outline outline-1 outline-purple-300">
